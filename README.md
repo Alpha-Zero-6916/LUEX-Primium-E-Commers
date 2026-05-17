@@ -9,10 +9,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square" />
+<img width="1899" height="912" alt="Screenshot 2026-05-17 113340" src="https://github.com/user-attachments/assets/615c503c-aa44-4f59-adaf-464e2de2ed81" />
+<img width="1918" height="907" alt="Screenshot 2026-05-17 113404" src="https://github.com/user-attachments/assets/cdc45aeb-d59c-4777-a819-26a63685da1c" />
+<img width="1898" height="913" alt="Screenshot 2026-05-17 113444" src="https://github.com/user-attachments/assets/a97595de-2025-4c35-84d9-55a578ccad2c" />
+<img width="604" height="909" alt="Screenshot 2026-05-17 113516" src="https://github.com/user-attachments/assets/0e19560b-6269-40bc-846c-00e201ce190b" />
 </p>
 
 ---
