@@ -1,7 +1,7 @@
 # LUXE. ✦ Premium Fashion E-Commerce
 
 <p align="center">
-  <img src="./screenshots/hero.png" alt="LUXE Preview" width="100%" />
+  <img width="118" height="67" alt="Screenshot 2026-05-17 113944" src="https://github.com/user-attachments/assets/1fcc43dc-b17d-4bbd-aed0-95c23b1f58ce" />
 </p>
 
 <p align="center">
