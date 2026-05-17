@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe | Premium E-Commerce</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=9">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">LUXE.</a>
+            </div>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#shop" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="#collections" class="nav-link">Collections</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="action-btn" id="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button class="action-btn" id="account-btn" aria-label="Account"><i class="far fa-user"></i></button>
+                <button class="action-btn cart-btn" id="cart-btn" aria-label="Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Slider Section -->
+        <section class="hero-slider">
+            <div class="slider-container" id="hero-slider">
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <img src="./assets/assets/slider_01.jpg" alt="New Summer Collection" class="slide-img">
+                    <div class="slide-content">
+                        <span class="slide-subtitle">New Arrivals 2026</span>
+                        <h1 class="slide-title">Summer<br>Collection</h1>
+                        <p class="slide-text">Discover the latest trends in fashion and explore our new summer collection designed for comfort and style.</p>
+                        <a href="#shop" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="./assets/assets/slider_02.jpg" alt="Minimalist Essentials" class="slide-img">
+                    <div class="slide-content">
+                        <span class="slide-subtitle">Trending Now</span>
+                        <h1 class="slide-title">Minimalist<br>Essentials</h1>
+                        <p class="slide-text">Elevate your everyday wardrobe with our curated selection of premium minimalist pieces.</p>
+                        <a href="#shop" class="btn btn-primary">Discover</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./assets/assets/custom-size.jpg">
+                        <img src="./assets/assets/slider_03.jpg" alt="Elegant Accessories" class="slide-img">
+                    </picture>
+                    <div class="slide-content">
+                        <span class="slide-subtitle">Exclusive Accessories</span>
+                        <h1 class="slide-title">The Perfect<br>Details</h1>
+                        <p class="slide-text">Complete your look with our exclusive collection of handcrafted accessories.</p>
+                        <a href="#shop" class="btn btn-primary">Shop Accessories</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn" id="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next-btn" id="next-slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="slider-dots" id="slider-dots"></div>
+        </section>
+
+        <!-- Category Guides -->
+        <section class="section guides-section" id="collections">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Shop by Category</h2>
+                    <p class="section-subtitle">Explore our carefully curated collections for every occasion</p>
+                </div>
+                <div class="guides-grid">
+                    <div class="guide-card">
+                        <img src="./assets/assets/guide_01.png" alt="Women's Collection" class="guide-img">
+                        <div class="guide-content">
+                            <h3>Women</h3>
+                            <a href="#" class="btn btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="guide-card teaser-card">
+                        <img src="./assets/assets/teaser_accessories.png" alt="Accessories" class="guide-img blurred-img">
+                        <div class="guide-content teaser-content">
+                            <span class="teaser-tag">Coming Soon</span>
+                            <h3>Accessories</h3>
+                            <p class="teaser-text">To be added in future features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="section products-section" id="shop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Trending Products</h2>
+                    <p class="section-subtitle">Top picks from our community this week</p>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="./assets/assets/product_01.jpg" alt="Product 1" class="product-img-main">
+                            <img src="./assets/assets/product_01b.jpg" alt="Product 1 Hover" class="product-img-hover">
+                            <div class="product-badges">
+                                <span class="badge new">New</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-icon tooltip" data-tooltip="Quick View"><i class="far fa-eye"></i></button>
+                                <button class="action-icon tooltip" data-tooltip="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Dresses</span>
+                            <h3 class="product-name"><a href="#">Elegant Summer Dress</a></h3>
+                            <div class="product-price">$89.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="./assets/assets/product_02.jpg" alt="Product 2" class="product-img-main">
+                            <img src="./assets/assets/product_02b.jpg" alt="Product 2 Hover" class="product-img-hover">
+                            <div class="product-actions">
+                                <button class="action-icon tooltip" data-tooltip="Quick View"><i class="far fa-eye"></i></button>
+                                <button class="action-icon tooltip" data-tooltip="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Tops</span>
+                            <h3 class="product-name"><a href="#">Classic Silk Blouse</a></h3>
+                            <div class="product-price">$65.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="./assets/assets/product_03.jpg" alt="Product 3" class="product-img-main">
+                            <img src="./assets/assets/product_03b.jpg" alt="Product 3 Hover" class="product-img-hover">
+                            <div class="product-badges">
+                                <span class="badge sale">-20%</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-icon tooltip" data-tooltip="Quick View"><i class="far fa-eye"></i></button>
+                                <button class="action-icon tooltip" data-tooltip="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Outerwear</span>
+                            <h3 class="product-name"><a href="#">Tailored Trench Coat</a></h3>
+                            <div class="product-price">
+                                <span class="price-old">$150.00</span>
+                                <span class="price-new">$120.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="./assets/assets/product_04.jpg" alt="Product 4" class="product-img-main">
+                            <img src="./assets/assets/product_04b.jpg" alt="Product 4 Hover" class="product-img-hover">
+                            <div class="product-actions">
+                                <button class="action-icon tooltip" data-tooltip="Quick View"><i class="far fa-eye"></i></button>
+                                <button class="action-icon tooltip" data-tooltip="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Bottoms</span>
+                            <h3 class="product-name"><a href="#">Wide Leg Trousers</a></h3>
+                            <div class="product-price">$75.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="./assets/assets/product_05.jpg" alt="Product 5" class="product-img-main">
+                            <img src="./assets/assets/product_05b.jpg" alt="Product 5 Hover" class="product-img-hover">
+                            <div class="product-actions">
+                                <button class="action-icon tooltip" data-tooltip="Quick View"><i class="far fa-eye"></i></button>
+                                <button class="action-icon tooltip" data-tooltip="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Knitwear</span>
+                            <h3 class="product-name"><a href="#">Chunky Cashmere Sweater</a></h3>
+                            <div class="product-price">$110.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="./assets/assets/product_06.jpg" alt="Product 6" class="product-img-main">
+                            <img src="./assets/assets/product_06b.jpg" alt="Product 6 Hover" class="product-img-hover">
+                            <div class="product-badges">
+                                <span class="badge hot">Hot</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-icon tooltip" data-tooltip="Quick View"><i class="far fa-eye"></i></button>
+                                <button class="action-icon tooltip" data-tooltip="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Dresses</span>
+                            <h3 class="product-name"><a href="#">Floral Midi Dress</a></h3>
+                            <div class="product-price">$95.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="./assets/assets/product_07.jpg" alt="Product 7" class="product-img-main">
+                            <img src="./assets/assets/product_07b.jpg" alt="Product 7 Hover" class="product-img-hover">
+                            <div class="product-actions">
+                                <button class="action-icon tooltip" data-tooltip="Quick View"><i class="far fa-eye"></i></button>
+                                <button class="action-icon tooltip" data-tooltip="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Accessories</span>
+                            <h3 class="product-name"><a href="#">Leather Crossbody Bag</a></h3>
+                            <div class="product-price">$135.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="./assets/assets/product_08.jpg" alt="Product 8" class="product-img-main">
+                            <img src="./assets/assets/product_08b.jpg" alt="Product 8 Hover" class="product-img-hover">
+                            <div class="product-actions">
+                                <button class="action-icon tooltip" data-tooltip="Quick View"><i class="far fa-eye"></i></button>
+                                <button class="action-icon tooltip" data-tooltip="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Shoes</span>
+                            <h3 class="product-name"><a href="#">Minimalist Strappy Sandals</a></h3>
+                            <div class="product-price">$80.00</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="view-all-container">
+                    <a href="#" class="btn btn-outline-dark">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotional Banner -->
+        <section class="banner-section">
+            <div class="banner-wrapper">
+                <img src="./assets/assets/custom-size.jpg" alt="Promotional Banner" class="banner-bg">
+                <div class="banner-content">
+                    <h2>The Premium Collection</h2>
+                    <p>Experience unmatched quality and timeless design.</p>
+                    <a href="#shop" class="btn btn-primary">Explore Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="section blog-section" id="blog">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Latest Journal</h2>
+                    <p class="section-subtitle">Style advice, trends and inspiration</p>
+                </div>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <a href="#"><img src="./assets/assets/blog_01.jpg" alt="Blog 1"></a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="date">May 12, 2026</span>
+                                <span class="category">Fashion</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">10 Essential Wardrobe Staples for Every Woman</a></h3>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <a href="#"><img src="./assets/assets/blog_02.jpg" alt="Blog 2"></a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="date">May 05, 2026</span>
+                                <span class="category">Lifestyle</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">How to Build a Minimalist Capsule Wardrobe</a></h3>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-img-wrapper">
+                            <a href="#"><img src="./assets/assets/blog_03.jpg" alt="Blog 3"></a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="date">April 28, 2026</span>
+                                <span class="category">Trends</span>
+                            </div>
+                            <h3 class="blog-title"><a href="#">The Color Palette Taking Over This Summer</a></h3>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Feed -->
+        <section class="instagram-section">
+            <div class="instagram-header">
+                <h3>@luxe_official</h3>
+                <p>Follow us on Instagram</p>
+            </div>
+            <div class="instagram-grid">
+                <a href="#" class="ig-item">
+                    <img src="./assets/assets/ig_01.jpg" alt="Instagram 1">
+                    <div class="ig-overlay"><i class="fab fa-instagram"></i></div>
+                </a>
+                <a href="#" class="ig-item">
+                    <img src="./assets/assets/ig_02.jpg" alt="Instagram 2">
+                    <div class="ig-overlay"><i class="fab fa-instagram"></i></div>
+                </a>
+                <a href="#" class="ig-item">
+                    <img src="./assets/assets/ig_03.jpg" alt="Instagram 3">
+                    <div class="ig-overlay"><i class="fab fa-instagram"></i></div>
+                </a>
+                <a href="#" class="ig-item">
+                    <img src="./assets/assets/ig_04.jpg" alt="Instagram 4">
+                    <div class="ig-overlay"><i class="fab fa-instagram"></i></div>
+                </a>
+                <a href="#" class="ig-item">
+                    <img src="./assets/assets/ig_05.jpg" alt="Instagram 5">
+                    <div class="ig-overlay"><i class="fab fa-instagram"></i></div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-widget">
+                <h3 class="footer-logo">LUXE.</h3>
+                <p class="footer-desc">Premium fashion and lifestyle brand dedicated to minimalist aesthetics and high-quality craftsmanship.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-widget">
+                <h4 class="widget-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-widget">
+                <h4 class="widget-title">Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Women's Clothing</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-widget">
+                <h4 class="widget-title">Newsletter</h4>
+                <p class="footer-desc">Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 LUXE. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+        <button class="close-search-btn" id="close-search" aria-label="Close search"><i class="fas fa-times"></i></button>
+        <div class="search-container">
+            <form class="search-form" onsubmit="event.preventDefault();">
+                <input type="search" placeholder="Type here to search..." id="search-input" autocomplete="off">
+                <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="popular-searches">
+                <h4>Popular Searches</h4>
+                <div class="search-tags">
+                    <a href="#shop" class="search-tag">Summer Dress</a>
+                    <a href="#shop" class="search-tag">Silk Blouse</a>
+                    <a href="#shop" class="search-tag">Trench Coat</a>
+                    <a href="#shop" class="search-tag">Sandals</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Modal -->
+    <div class="account-modal" id="account-modal">
+        <button class="close-modal-btn" id="close-account" aria-label="Close modal"><i class="fas fa-times"></i></button>
+        <div class="modal-tabs">
+            <button class="tab-btn active" data-tab="login">Login</button>
+            <button class="tab-btn" data-tab="register">Register</button>
+        </div>
+        
+        <!-- Login Form -->
+        <form class="account-form active" id="login-form" onsubmit="event.preventDefault(); alert('Logged in successfully!');">
+            <div class="input-group">
+                <label for="login-email">Email Address</label>
+                <input type="email" id="login-email" required placeholder="name@example.com">
+            </div>
+            <div class="input-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required placeholder="••••••••">
+            </div>
+            <div class="form-actions">
+                <label class="remember-me">
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#" class="forgot-pwd">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Sign In</button>
+        </form>
+
+        <!-- Register Form -->
+        <form class="account-form" id="register-form" onsubmit="event.preventDefault(); alert('Account created successfully!');">
+            <div class="input-group">
+                <label for="reg-name">Full Name</label>
+                <input type="text" id="reg-name" required placeholder="John Doe">
+            </div>
+            <div class="input-group">
+                <label for="reg-email">Email Address</label>
+                <input type="email" id="reg-email" required placeholder="name@example.com">
+            </div>
+            <div class="input-group">
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" required placeholder="••••••••">
+            </div>
+            <div class="form-actions">
+                <label class="terms">
+                    <input type="checkbox" required> I agree to the terms & conditions
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Create Account</button>
+        </form>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-drawer-header">
+            <h3>Shopping Bag (<span class="cart-total-qty">0</span>)</h3>
+            <button class="close-cart-btn" id="close-cart" aria-label="Close cart"><i class="fas fa-times"></i></button>
+        </div>
+        
+        <!-- Cart Items Container -->
+        <div class="cart-drawer-body">
+            <div class="cart-empty-message" id="cart-empty-message">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Your shopping bag is empty.</p>
+                <a href="#shop" class="btn btn-outline-dark" id="cart-shop-now">Shop New Arrivals</a>
+            </div>
+            <div class="cart-items-list" id="cart-items-list">
+                <!-- Dynamically generated cart items go here -->
+            </div>
+        </div>
+        
+        <div class="cart-drawer-footer" id="cart-drawer-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal:</span>
+                <span class="subtotal-amount">$0.00</span>
+            </div>
+            <p class="shipping-info">Shipping and taxes calculated at checkout.</p>
+            <button class="btn btn-primary w-100 checkout-btn" onclick="alert('Proceeding to Checkout!');">Proceed To Checkout</button>
+        </div>
+    </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <div class="mobile-bottom-nav">
+        <a href="#" class="bottom-nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <button class="bottom-nav-item" id="bottom-search-btn">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+        </button>
+        <button class="bottom-nav-item cart-btn" id="bottom-cart-btn">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count">0</span>
+            <span>Cart</span>
+        </button>
+        <a href="#collections" class="bottom-nav-item">
+            <i class="far fa-heart"></i>
+            <span>Wishlist</span>
+        </a>
+        <button class="bottom-nav-item" id="bottom-account-btn">
+            <i class="far fa-user"></i>
+            <span>Account</span>
+        </button>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
