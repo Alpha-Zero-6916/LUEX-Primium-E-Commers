@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-
+<img width="1899" height="912" alt="Screenshot 2026-05-17 113340" src="https://github.com/user-attachments/assets/615c503c-aa44-4f59-adaf-464e2de2ed81" />
 <img width="1918" height="907" alt="Screenshot 2026-05-17 113404" src="https://github.com/user-attachments/assets/cdc45aeb-d59c-4777-a819-26a63685da1c" />
 <img width="1898" height="913" alt="Screenshot 2026-05-17 113444" src="https://github.com/user-attachments/assets/a97595de-2025-4c35-84d9-55a578ccad2c" />
 <img width="604" height="909" alt="Screenshot 2026-05-17 113516" src="https://github.com/user-attachments/assets/0e19560b-6269-40bc-846c-00e201ce190b" />
@@ -17,14 +17,6 @@
 
 ---
 
-## Preview
-
-| | |
-|---|---|
-| ![Hero](<img width="1899" height="912" alt="Screenshot 2026-05-17 113340" src="https://github.com/user-attachments/assets/615c503c-aa44-4f59-adaf-464e2de2ed81" />) | ![Shop](./screenshots/products.png) |
-| ![Cart](./screenshots/cart.png) | ![Mobile](./screenshots/mobile.png) |
-
----
 
 ## What's Inside
 
